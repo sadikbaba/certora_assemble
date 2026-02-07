@@ -1,0 +1,18 @@
+# Certora temporary files
+.certora_config/
+.certora_internal/
+certora-run-*/
+emv-*/
+*.log
+
+# Python/Java junk
+__pycache__/
+*.class
+
+.certora_internal/
+.certora_config/
+certora-run-*/
+emv-*/
+.bashrc
+.profile
+.env
