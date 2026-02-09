@@ -1,6 +1,6 @@
 methods {
     function _mint(address to, uint256 value) external envfree;
-    function getBalance(address) external returns (uint256) envfree;
+    function getBalance(address) external  returns (uint256) envfree;
 }
 
 rule checkMint() {
