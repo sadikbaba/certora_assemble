@@ -16,7 +16,7 @@ You can run the Prover directly from the CLI or using the provided configuration
 Option A: Using the Config File (Recommended)
 
 ```javascript
-certoraRun counter.conf
+certoraRun confs/counter.conf
 ```
 Option B: Direct CLI Command
 
