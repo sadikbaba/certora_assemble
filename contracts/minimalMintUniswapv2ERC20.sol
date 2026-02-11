@@ -6,7 +6,7 @@ pragma solidity ^0.8.0;
 contract UniswapV2Mint {
     event Transfer(address indexed from, address indexed to, uint256 value);
 
-    uint256  totalSupply;
+    uint256 totalSupply;
     mapping(address => uint256) balanceOf;
 
     // For simplicity, I changed the function visibility from internal to external.
@@ -15,18 +15,18 @@ contract UniswapV2Mint {
     // as I only want to test the math inside the function.
 
     function _mint(address to, uint256 value) external {
-        totalSupply = totalSupply +(value);
+        totalSupply = totalSupply + (value);
         balanceOf[to] = balanceOf[to] + (value);
         emit Transfer(address(0), to, value);
     }
 
-    // to check balance of user 
+    // to check balance of user
 
     function getBalance(address user) external view returns (uint256) {
-    return balanceOf[user];
+        return balanceOf[user];
     }
 
-    function _totalSupply() external view returns(uint) {
+    function _totalSupply() external view returns (uint256) {
         return totalSupply;
     }
 }
